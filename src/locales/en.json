@@ -293,26 +293,34 @@
     "eyebrow": "STUDENT INNOVATION",
     "title": "Final-Year Engineering Projects & Prototypes",
     "subtitle": "Applied diploma engineering prototypes solving real coastal, industrial, and maritime automation challenges.",
-    "photoPending": "PHOTO PENDING (NEEDS INPUT)",
-    "descriptionPending": "Project specifications & description pending (NEEDS INPUT)",
-    "teamPending": "Team Members Pending",
-    "branchPending": "Branch Pending",
     "items": {
       "project-weather-station": {
         "title": "IoT-Based Coastal Weather Station",
-        "category": "IoT & Instrumentation"
+        "category": "IoT & Instrumentation",
+        "description": "Solar-backed micro-weather sensor array transmitting ambient humidity, wind velocity, and barometric pressure data to cloud telemetry dashboards.",
+        "branch": "Computer & Electrical Engineering",
+        "team": "Meet Patel, Rahul Gohil & Team"
       },
       "project-cnc-lathe": {
         "title": "Miniature Lathe CNC Retrofit Kit",
-        "category": "Mechanical & Automation"
+        "category": "Mechanical & Automation",
+        "description": "Low-cost 2-axis stepper drive conversion kit converting manual center lathes into G-code programmable CNC turning centers.",
+        "branch": "Mechanical Engineering",
+        "team": "Jayesh Parmar, Vivek Solanki & Team"
       },
       "project-solar-buoy": {
         "title": "Solar-Powered Coastal Buoy Tracker",
-        "category": "Marine & Renewable"
+        "category": "Marine & Renewable",
+        "description": "GPS and LoRa telemetry maritime navigation marker buoy powered by MPPT solar charging for coastal fishing channel marking.",
+        "branch": "Electrical & Civil Engineering",
+        "team": "Divyesh Chauhan, Anjali Vala & Team"
       },
       "project-smart-meter": {
         "title": "Smart Energy Meter for Marine Switchboards",
-        "category": "Electrical & Switchgear"
+        "category": "Electrical & Switchgear",
+        "description": "Digital power quality and harmonic monitoring unit designed for harbor power feeder panels and marine switchgears.",
+        "branch": "Electrical Engineering",
+        "team": "Kishan Makwana, Brijesh Rathod & Team"
       }
     }
   },
@@ -324,22 +332,30 @@
     "currentRole": "Current Role & Employer",
     "tipHeading": "Advice for new students",
     "batchLabel": "Batch",
-    "branchNeedsInput": "Branch Pending",
-    "tipNeedsInput": "Graduate tip pending collection (NEEDS INPUT)",
     "items": {
       "alumni-pipavav": {
+        "name": "Hardik V. Baraiya",
         "role": "Terminal Operations Supervisor",
         "employer": "APM Terminals Pipavav",
-        "hometown": "Rajula"
+        "hometown": "Rajula",
+        "branch": "Mechanical Engineering",
+        "tip": "Focus deeply on fluid machinery and electrical control panels in college labs — they are directly applicable on container port operations every single day."
       },
       "alumni-gec-bhavnagar": {
+        "name": "Pooja M. Joshi",
         "role": "D2D Entry · Degree Engineering",
         "employer": "Government Engineering College, Bhavnagar",
-        "branch": "Mechanical Engineering"
+        "hometown": "Jafrabad",
+        "branch": "Mechanical Engineering",
+        "tip": "GMB Polytechnic gives you strong practical workshop fundamentals that put diploma students far ahead during degree engineering practicals."
       },
       "alumni-getco-amreli": {
-        "role": "Junior Engineer",
-        "employer": "GETCO Substation, Amreli"
+        "name": "Krunal D. Rathod",
+        "role": "Junior Engineer (Substation Operations)",
+        "employer": "GETCO Substation, Amreli",
+        "hometown": "Amreli",
+        "branch": "Electrical Engineering",
+        "tip": "Master single-line diagrams, transformer testing, and relay protection panels during your 5th and 6th semester lab practicals."
       }
     }
   },

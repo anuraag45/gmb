@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 export const REAL_IMAGES: Record<string, string> = {
   'CAMPUS-EXTERIOR.JPG': '/images/gmb/campus-admin.jpg',
   'WORKSHOP-WING.JPG': '/images/gmb/campus-main.jpg',
-  'MARITIME-BELT.JPG': 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80',
+  'MARITIME-BELT.JPG': '/images/gmb/campus-workshop.jpg',
   'PRINCIPAL-PORTRAIT.JPG': 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80',
   'PORTRAIT.JPG': 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80',
   'DEPT-COMPUTER-LAB.JPG': '/images/gmb/dept-computer-clean.jpg',
@@ -19,13 +19,23 @@ export const REAL_IMAGES: Record<string, string> = {
   'CAMPUS-ADMIN.JPG': '/images/gmb/campus-admin.jpg',
   'CAMPUS-WING.JPG': '/images/gmb/campus-wing.jpg',
   'CAMPUS-GMAPS.JPG': '/images/gmb/campus-gmaps.jpg',
+  'CAMPUS-CORRIDOR.JPG': '/images/gmb/campus-corridor.jpg',
+  'CAMPUS-WORKSHOP.JPG': '/images/gmb/campus-workshop.jpg',
   'ANNUAL-TECH-FEST.JPG': '/images/gmb/dept-computer-clean.jpg',
   'MACHINE-SHOP-PRACTICAL.JPG': '/images/gmb/dept-mechanical-clean.jpg',
   'INDEPENDENCE-DAY-PARADE.JPG': '/images/gmb/campus-courtyard-clean.jpg',
   'INTER-COLLEGE-CRICKET.JPG': '/images/gmb/campus-main.jpg',
-  'INDUSTRIAL-VISIT-PIPAVAV.JPG': 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1000&q=80',
+  'INDUSTRIAL-VISIT-PIPAVAV.JPG': '/images/gmb/campus-workshop.jpg',
   'LIBRARY-READING-HALL.JPG': '/images/gmb/campus-wing.jpg',
-  'CAMPUS-LOCATION-MAP.JPG': '/images/gmb/campus-main.jpg'
+  'CAMPUS-LOCATION-MAP.JPG': '/images/gmb/campus-main.jpg',
+  'PROJECT-WEATHER-STATION.JPG': '/images/gmb/dept-computer-lab2-clean.jpg',
+  'PROJECT-CNC-LATHE.JPG': '/images/gmb/dept-mechanical-clean.jpg',
+  'PROJECT-SOLAR-BUOY.JPG': '/images/gmb/dept-civil-gmaps.jpg',
+  'PROJECT-SMART-METER.JPG': '/images/gmb/dept-electrical-gmaps.jpg',
+  'PROJECT-DEFAULT.JPG': '/images/gmb/campus-workshop.jpg',
+  'ALUMNI-PIPAVAV.JPG': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+  'ALUMNI-GEC.JPG': 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
+  'ALUMNI-GETCO.JPG': 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80'
 };
 
 interface PlaceholderImageProps {
@@ -44,9 +54,7 @@ export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
   src,
   alt,
   className = '',
-  variant = 'light',
   aspectRatio = 'auto',
-  showIcon = true,
   onClick
 }) => {
   const [hasError, setHasError] = useState(false);
@@ -61,15 +69,14 @@ export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
     auto: ''
   }[aspectRatio];
 
-  const imageSrc = src || REAL_IMAGES[label];
-  const isDark = variant === 'dark';
+  const imageSrc = src || REAL_IMAGES[label] || '/images/gmb/campus-main.jpg';
 
-  if (imageSrc && !hasError) {
+  if (!hasError) {
     return (
       <div
         onClick={onClick}
         className={cn(
-          'relative overflow-hidden bg-slate-800 flex items-center justify-center select-none',
+          'relative overflow-hidden bg-slate-900 flex items-center justify-center select-none',
           aspectClasses,
           onClick ? 'cursor-pointer' : '',
           className
@@ -87,7 +94,7 @@ export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
           )}
         />
         {!isLoaded && (
-          <div className="absolute inset-0 bg-slate-800 animate-pulse flex items-center justify-center">
+          <div className="absolute inset-0 bg-slate-800/80 animate-pulse flex items-center justify-center">
             <ImageIcon className="w-6 h-6 text-slate-500" />
           </div>
         )}
@@ -99,31 +106,17 @@ export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
     <div
       onClick={onClick}
       className={cn(
-        'relative overflow-hidden flex flex-col items-center justify-center select-none transition-all duration-200',
-        isDark ? 'blueprint-hatch-dark text-white/70' : 'blueprint-hatch text-slate-500',
+        'relative overflow-hidden bg-linear-to-br from-[#06182B] to-[#0B2F52] flex items-center justify-center select-none',
         aspectClasses,
-        onClick ? 'cursor-pointer hover:opacity-90' : '',
+        onClick ? 'cursor-pointer' : '',
         className
       )}
     >
-      <div className="relative z-10 flex flex-col items-center justify-center p-4 text-center">
-        {showIcon && (
-          <div className={cn(
-            'p-2 rounded-md mb-2 flex items-center justify-center',
-            isDark ? 'bg-white/10 text-white/80' : 'bg-slate-200/70 text-slate-600'
-          )}>
-            <ImageIcon className="w-5 h-5 stroke-[1.5]" />
-          </div>
-        )}
-        <span className={cn(
-          'text-[11px] font-mono tracking-widest uppercase font-semibold px-2 py-0.5 rounded',
-          isDark 
-            ? 'bg-slate-900/60 text-slate-200 border border-white/10' 
-            : 'bg-white/80 text-slate-700 border border-slate-300/60 shadow-xs'
-        )}>
-          {label}
-        </span>
-      </div>
+      <img
+        src="/images/gmb/campus-main.jpg"
+        alt="GMB Polytechnic Campus"
+        className="w-full h-full object-cover opacity-90"
+      />
     </div>
   );
 };

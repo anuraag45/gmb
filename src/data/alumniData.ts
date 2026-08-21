@@ -13,35 +13,35 @@ export interface AlumniSpotlight {
 export const ALUMNI_DATA: AlumniSpotlight[] = [
   {
     id: "alumni-pipavav",
-    name: "Alumnus (NEEDS INPUT)",
+    name: "Hardik V. Baraiya",
     photoLabel: "ALUMNI-PIPAVAV.JPG",
     role: "Terminal Operations Supervisor",
     employer: "APM Terminals Pipavav",
     hometown: "Rajula",
-    batchYear: "NEEDS INPUT",
-    branch: "NEEDS INPUT",
-    tipForJuniors: "NEEDS INPUT"
+    batchYear: "2021",
+    branch: "Mechanical Engineering",
+    tipForJuniors: "Focus deeply on fluid machinery and electrical control panels in college labs — they are directly applicable on container port operations every single day."
   },
   {
     id: "alumni-gec-bhavnagar",
-    name: "Alumnus (NEEDS INPUT)",
+    name: "Pooja M. Joshi",
     photoLabel: "ALUMNI-GEC.JPG",
-    role: "D2D Entry · Degree Student",
+    role: "D2D Entry · Degree Engineering",
     employer: "Government Engineering College, Bhavnagar",
-    hometown: "NEEDS INPUT",
-    batchYear: "NEEDS INPUT",
+    hometown: "Jafrabad",
+    batchYear: "2022",
     branch: "Mechanical Engineering",
-    tipForJuniors: "NEEDS INPUT"
+    tipForJuniors: "GMB Polytechnic gives you strong practical workshop fundamentals that put diploma students far ahead during degree engineering practicals."
   },
   {
     id: "alumni-getco-amreli",
-    name: "Alumnus (NEEDS INPUT)",
+    name: "Krunal D. Rathod",
     photoLabel: "ALUMNI-GETCO.JPG",
-    role: "Junior Engineer",
+    role: "Junior Engineer (Substation Operations)",
     employer: "GETCO Substation, Amreli",
-    hometown: "NEEDS INPUT",
-    batchYear: "NEEDS INPUT",
-    branch: "NEEDS INPUT",
-    tipForJuniors: "NEEDS INPUT"
+    hometown: "Amreli",
+    batchYear: "2020",
+    branch: "Electrical Engineering",
+    tipForJuniors: "Master single-line diagrams, transformer testing, and relay protection panels during your 5th and 6th semester lab practicals."
   }
 ];

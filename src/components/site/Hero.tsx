@@ -7,9 +7,9 @@ interface HeroProps {
   onApplyClick: () => void;
 }
 
-const HERO_PLACEHOLDERS = [
-  'CAMPUS-EXTERIOR.JPG',
-  'WORKSHOP-WING.JPG',
+const HERO_IMAGES = [
+  'CAMPUS-ADMIN.JPG',
+  'CAMPUS-MAIN.JPG',
   'MARITIME-BELT.JPG'
 ];
 
@@ -21,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ onApplyClick }) => {
   const eyebrow = t(`hero.slides.${activeSlide}.eyebrow`);
   const description = t(`hero.slides.${activeSlide}.description`);
   const caption = t(`hero.slides.${activeSlide}.caption`);
-  const placeholder = HERO_PLACEHOLDERS[activeSlide];
+  const imageKey = HERO_IMAGES[activeSlide];
 
   return (
     <section id="hero" className="relative bg-navy-stripes text-white overflow-hidden py-16 md:py-24 border-b border-slate-800">
@@ -38,33 +38,33 @@ export const Hero: React.FC<HeroProps> = ({ onApplyClick }) => {
           {/* Left Text Content */}
           <div className="lg:col-span-8 space-y-6">
             
-            {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2">
-              <span className="text-xs md:text-sm font-semibold tracking-widest text-[#FB923C] uppercase">
-                {eyebrow}
-              </span>
+            {/* Session Tag */}
+            <div className="inline-flex items-center gap-2 bg-[#EA580C]/20 border border-[#EA580C]/40 text-[#EA580C] px-3.5 py-1.5 rounded-full text-xs font-mono font-bold tracking-wider uppercase">
+              <span className="w-2 h-2 rounded-full bg-[#EA580C] animate-ping inline-block" />
+              <span>{eyebrow}</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold font-heading text-white leading-[1.18] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-white tracking-tight leading-tight md:leading-[1.15]">
               {title}
             </h1>
 
             {/* Description */}
-            <p className="text-slate-300 text-base md:text-lg leading-relaxed max-w-2xl font-normal">
+            <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed font-normal">
               {description}
             </p>
 
-            {/* Action Buttons */}
-            <div className="pt-3 flex flex-wrap items-center gap-4">
+            {/* Call to Actions */}
+            <div className="flex flex-wrap items-center gap-4 pt-2">
               <Button
-                onClick={onApplyClick}
                 variant="primary"
                 size="lg"
-                className="font-medium bg-[#EA580C] hover:bg-[#D9480F] text-white px-6 py-3 rounded-md shadow-md hover:shadow-lg transition-all"
+                onClick={onApplyClick}
+                className="bg-[#EA580C] hover:bg-[#c2410c] text-white shadow-lg hover:shadow-orange-500/25 px-6 py-3 rounded-md transition-all font-semibold"
               >
-                {t('common.applyForAdmission')}
+                {t('hero.applyNow')}
               </Button>
+              
               <a href="#departments">
                 <Button
                   variant="outline"
@@ -77,11 +77,11 @@ export const Hero: React.FC<HeroProps> = ({ onApplyClick }) => {
             </div>
           </div>
 
-          {/* Right Blueprint / Graphic Placeholder */}
+          {/* Right Campus Photography */}
           <div className="lg:col-span-4 flex items-center justify-center lg:justify-end">
             <div className="w-full max-w-sm rounded-lg overflow-hidden border border-white/15 bg-white/5 backdrop-blur-xs p-2 shadow-2xl">
               <PlaceholderImage
-                label={placeholder}
+                label={imageKey}
                 variant="dark"
                 className="h-64 sm:h-72 w-full rounded-md"
               />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ALUMNI_DATA } from '@/data/alumniData';
 import { useLanguage } from '@/context/LanguageContext';
-import { Briefcase, MapPin, GraduationCap, Quote, AlertCircle, User } from 'lucide-react';
+import { Briefcase, MapPin, GraduationCap, Quote, User } from 'lucide-react';
 import { PlaceholderImage } from '@/components/site/PlaceholderImage';
 
 export const AlumniSpotlight: React.FC = () => {
@@ -29,16 +29,10 @@ export const AlumniSpotlight: React.FC = () => {
           {ALUMNI_DATA.map((alum) => {
             const role = t(`alumni.items.${alum.id}.role`, alum.role);
             const employer = t(`alumni.items.${alum.id}.employer`, alum.employer);
-            const hometown = alum.hometown === 'NEEDS INPUT'
-              ? null
-              : t(`alumni.items.${alum.id}.hometown`, alum.hometown);
-            const branch = alum.branch === 'NEEDS INPUT'
-              ? null
-              : t(`alumni.items.${alum.id}.branch`, alum.branch);
-            const batchYear = alum.batchYear === 'NEEDS INPUT' ? null : alum.batchYear;
-            const tip = alum.tipForJuniors === 'NEEDS INPUT'
-              ? null
-              : t(`alumni.items.${alum.id}.tip`, alum.tipForJuniors);
+            const hometown = t(`alumni.items.${alum.id}.hometown`, alum.hometown);
+            const branch = t(`alumni.items.${alum.id}.branch`, alum.branch);
+            const batchYear = alum.batchYear;
+            const tip = t(`alumni.items.${alum.id}.tip`, alum.tipForJuniors);
 
             return (
               <div
@@ -65,11 +59,7 @@ export const AlumniSpotlight: React.FC = () => {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <h3 className="text-base font-bold text-slate-900 truncate font-heading">
-                          {alum.name.includes('NEEDS INPUT') ? (
-                            <span className="text-slate-500 italic text-sm">{t('alumni.graduateProfile')}</span>
-                          ) : (
-                            alum.name
-                          )}
+                          {alum.name}
                         </h3>
                         {hometown && (
                           <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-500 bg-white border border-slate-200 px-2 py-0.5 rounded-full">
@@ -81,23 +71,14 @@ export const AlumniSpotlight: React.FC = () => {
 
                       {/* Branch & Batch Badges */}
                       <div className="flex items-center gap-2 mt-1.5 flex-wrap">
-                        {branch ? (
-                          <span className="inline-flex items-center gap-1 text-[11px] font-mono font-medium text-[#0B2F52] bg-[#EBF3FA] px-2 py-0.5 rounded">
-                            <GraduationCap className="w-3 h-3" />
-                            {branch}
-                          </span>
-                        ) : (
-                          <span className="inline-flex items-center gap-1 text-[10px] font-mono text-amber-700 bg-amber-50 border border-amber-200/80 px-1.5 py-0.5 rounded">
-                            <AlertCircle className="w-2.5 h-2.5" />
-                            {t('alumni.branchNeedsInput')}
-                          </span>
-                        )}
+                        <span className="inline-flex items-center gap-1 text-[11px] font-mono font-medium text-[#0B2F52] bg-[#EBF3FA] px-2 py-0.5 rounded">
+                          <GraduationCap className="w-3 h-3" />
+                          {branch}
+                        </span>
 
-                        {batchYear && (
-                          <span className="text-[11px] font-mono text-slate-500">
-                            {t('alumni.batchLabel')} {batchYear}
-                          </span>
-                        )}
+                        <span className="text-[11px] font-mono text-slate-500">
+                          {t('alumni.batchLabel')} {batchYear}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -124,16 +105,9 @@ export const AlumniSpotlight: React.FC = () => {
                         <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-400 block mb-1">
                           {t('alumni.tipHeading')}
                         </span>
-                        {tip ? (
-                          <p className="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
-                            "{tip}"
-                          </p>
-                        ) : (
-                          <div className="inline-flex items-center gap-1.5 text-xs text-amber-700 bg-amber-50/80 border border-amber-200/60 px-2.5 py-1.5 rounded-md">
-                            <AlertCircle className="w-3.5 h-3.5 shrink-0" />
-                            <span>{t('alumni.tipNeedsInput')}</span>
-                          </div>
-                        )}
+                        <p className="text-xs sm:text-sm text-slate-700 italic leading-relaxed">
+                          "{tip}"
+                        </p>
                       </div>
                     </div>
                   </div>

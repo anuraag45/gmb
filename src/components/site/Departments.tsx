@@ -62,7 +62,7 @@ export const Departments: React.FC<DepartmentsProps> = ({ onApplyForDepartment }
                 className="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-[#0B2F52]/40 transition-all duration-200 group"
               >
                 <div>
-                  {/* Card Image Placeholder */}
+                  {/* Department Laboratory Photography */}
                   <div className="relative border-b border-slate-100">
                     <PlaceholderImage
                       label={dept.imageLabel}
