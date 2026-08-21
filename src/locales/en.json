@@ -286,6 +286,33 @@
       }
     }
   },
+  "projects": {
+    "eyebrow": "STUDENT INNOVATION",
+    "title": "Final-Year Engineering Projects & Prototypes",
+    "subtitle": "Applied diploma engineering prototypes solving real coastal, industrial, and maritime automation challenges.",
+    "photoPending": "PHOTO PENDING (NEEDS INPUT)",
+    "descriptionPending": "Project specifications & description pending (NEEDS INPUT)",
+    "teamPending": "Team Members Pending",
+    "branchPending": "Branch Pending",
+    "items": {
+      "project-weather-station": {
+        "title": "IoT-Based Coastal Weather Station",
+        "category": "IoT & Instrumentation"
+      },
+      "project-cnc-lathe": {
+        "title": "Miniature Lathe CNC Retrofit Kit",
+        "category": "Mechanical & Automation"
+      },
+      "project-solar-buoy": {
+        "title": "Solar-Powered Coastal Buoy Tracker",
+        "category": "Marine & Renewable"
+      },
+      "project-smart-meter": {
+        "title": "Smart Energy Meter for Marine Switchboards",
+        "category": "Electrical & Switchgear"
+      }
+    }
+  },
   "alumni": {
     "eyebrow": "ALUMNI ON THE COAST",
     "title": "Where GMB Polytechnic Graduates Work & Excel",

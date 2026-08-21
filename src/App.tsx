@@ -4,6 +4,7 @@ import { Hero } from '@/components/site/Hero';
 import { WhyUs } from '@/components/site/WhyUs';
 import { PrincipalMessage } from '@/components/site/PrincipalMessage';
 import { Departments } from '@/components/site/Departments';
+import { StudentProjects } from '@/components/site/StudentProjects';
 import { Admissions } from '@/components/site/Admissions';
 import { Stats } from '@/components/site/Stats';
 import { AlumniSpotlight } from '@/components/site/AlumniSpotlight';
@@ -40,6 +41,9 @@ export function App() {
 
         {/* Academics / 4 Diploma Programmes */}
         <Departments onApplyForDepartment={(deptName) => handleOpenApply(deptName)} />
+
+        {/* Student Innovation & Capstone Projects Showcase */}
+        <StudentProjects />
 
         {/* Admissions Steps & 2026 Intake Banner */}
         <Admissions
