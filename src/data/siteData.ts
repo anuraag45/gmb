@@ -389,8 +389,11 @@ export const NAV_LINKS = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#why-us" },
   { name: "Departments", href: "#departments" },
+  { name: "Projects", href: "#student-projects" },
   { name: "Admissions", href: "#admissions" },
+  { name: "Scholarships", href: "#eligibility-wizard" },
   { name: "Faculty", href: "#principal" },
+  { name: "Alumni", href: "#alumni" },
   { name: "Placements", href: "#stats" },
   { name: "Gallery", href: "#gallery" },
   { name: "Contact", href: "#contact" }

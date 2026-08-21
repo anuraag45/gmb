@@ -6,6 +6,7 @@ import { PrincipalMessage } from '@/components/site/PrincipalMessage';
 import { Departments } from '@/components/site/Departments';
 import { StudentProjects } from '@/components/site/StudentProjects';
 import { Admissions } from '@/components/site/Admissions';
+import { EligibilityWizard } from '@/components/site/EligibilityWizard';
 import { Stats } from '@/components/site/Stats';
 import { AlumniSpotlight } from '@/components/site/AlumniSpotlight';
 import { GalleryPreview } from '@/components/site/GalleryPreview';
@@ -50,6 +51,9 @@ export function App() {
           onApplyClick={() => handleOpenApply()}
           onProspectusClick={() => setProspectusModalOpen(true)}
         />
+
+        {/* Interactive ACPDC Merit Estimator & Scholarship Finder Wizard */}
+        <EligibilityWizard onApplyClick={() => handleOpenApply()} />
 
         {/* Key Placement & Legacy Stats */}
         <Stats />

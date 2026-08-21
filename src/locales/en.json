@@ -30,8 +30,11 @@
       "home": "Home",
       "about": "About",
       "departments": "Departments",
+      "projects": "Projects",
       "admissions": "Admissions",
+      "scholarships": "Scholarships",
       "principal": "Faculty",
+      "alumni": "Alumni",
       "placements": "Placements",
       "gallery": "Gallery",
       "contact": "Contact"
@@ -338,6 +341,54 @@
         "role": "Junior Engineer",
         "employer": "GETCO Substation, Amreli"
       }
+    }
+  },
+  "wizard": {
+    "eyebrow": "INTERACTIVE ADMISSION TOOL",
+    "title": "ACPDC Merit Estimator & Scholarship Finder",
+    "subtitle": "Check your estimated GTU diploma merit band and discover government fee waiver schemes in 2 simple steps.",
+    "steps": {
+      "step1": "1. SSC Marks",
+      "step2": "2. Category & Income",
+      "step3": "3. Results & Schemes"
+    },
+    "errors": {
+      "fillAllMarks": "Please enter marks for both Maths and Science.",
+      "invalidRange": "Marks must be valid numbers between 0 and 100."
+    },
+    "partA": {
+      "badge": "PART A: ACPDC MERIT ESTIMATOR",
+      "title": "Enter Your 10th Standard (SSC) Marks",
+      "desc": "Gujarat ACPDC computes the Core Diploma Merit Index from SSC Mathematics and Science out of 200 marks.",
+      "mathsLabel": "10th Mathematics Marks (out of 100) *",
+      "scienceLabel": "10th Science & Tech Marks (out of 100) *",
+      "passingNote": "Minimum 35 marks required to pass",
+      "coreIndex": "Estimated Core Total (Maths + Science):"
+    },
+    "partB": {
+      "badge": "PART B: SCHOLARSHIP ELIGIBILITY",
+      "title": "Category, Gender & Family Income Bracket",
+      "desc": "Gujarat state scholarship schemes like MYSY and Digital Gujarat provide up to 100% tuition assistance based on social category and family income.",
+      "categoryLabel": "1. Social Admission Category *",
+      "genderLabel": "2. Candidate Gender *",
+      "incomeLabel": "3. Annual Family Income (from all sources) *"
+    },
+    "report": {
+      "eyebrow": "ESTIMATED ELIGIBILITY SUMMARY",
+      "title": "Your Admission & Scholarship Breakdown",
+      "meritEstimateTitle": "1. ACPDC Diploma Merit Rank Feasibility",
+      "percentileBandLabel": "Estimated ACPDC Percentile Range:",
+      "competitiveBranchesLabel": "Typically Competitive Diploma Programmes at GMB Polytechnic:",
+      "failingMarks": "Minimum 35 marks in both Maths and Science are required for diploma eligibility. Please consult ACPDC supplementary rounds.",
+      "scholarshipTitle": "2. Government Scholarship & Fee Waiver Schemes You Likely Qualify For",
+      "ctaTitle": "Ready to Join GMB Polytechnic, Rajula?",
+      "ctaDesc": "Submit your admission enquiry for 2026-27 or get in touch with our helpdesk."
+    },
+    "buttons": {
+      "continueToScholarships": "Next: Check Scholarships",
+      "back": "Back to Marks",
+      "viewResults": "Generate Eligibility Report",
+      "startOver": "Recalculate"
     }
   },
   "admissionModal": {
