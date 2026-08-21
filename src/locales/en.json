@@ -1,0 +1,353 @@
+{
+  "common": {
+    "applyNow": "Apply Now",
+    "applyForAdmission": "Apply for Admission 2026",
+    "exploreDepartments": "Explore Departments",
+    "downloadProspectus": "Download Prospectus",
+    "readFullMessage": "Read the full message",
+    "showLess": "Show less",
+    "viewFullGallery": "View full gallery",
+    "close": "Close",
+    "submit": "Submit Application Details",
+    "departmentDetails": "Department details",
+    "applyForCourse": "Apply for this Course",
+    "seats": "SEATS",
+    "all": "All",
+    "technical": "Technical",
+    "events": "Events",
+    "sports": "Sports",
+    "industrial": "Industrial"
+  },
+  "topBar": {
+    "admissionBadge": "Admission Enquiry 2026 – open now",
+    "phone": "+91 2794 222 222",
+    "email": "admissions@gmbpolyrajula.ac.in"
+  },
+  "header": {
+    "instituteName": "GMB Polytechnic, Rajula",
+    "parentOrg": "GUJARAT MARITIME BOARD",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "departments": "Departments",
+      "admissions": "Admissions",
+      "principal": "Faculty",
+      "placements": "Placements",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "slides": [
+      {
+        "caption": "Rajula campus, main academic block",
+        "eyebrow": "EST. 1984 · GOVERNMENT OF GUJARAT",
+        "title": "Engineering diplomas built on the coast of Gujarat's industry.",
+        "description": "GMB Polytechnic, Rajula prepares diploma engineers for shipyards, ports, power and manufacturing — with disciplined teaching, working laboratories and a placement cell that knows the region's employers."
+      },
+      {
+        "caption": "Mechanical engineering heavy workshop",
+        "eyebrow": "AICTE APPROVED · GTU AFFILIATED",
+        "title": "Industry-grade workshops and modern laboratories.",
+        "description": "Practical training with industrial machinery, CNC lathe simulators, electrical machine test benches and high-speed computer centers."
+      },
+      {
+        "caption": "Pipavav maritime industrial zone visit",
+        "eyebrow": "PORT-LED INDUSTRIAL EXCELLENCE",
+        "title": "Direct proximity to Gujarat's major maritime hubs.",
+        "description": "Unique geographic advantage connecting students directly with APM Terminals Pipavav, ship repair yards, cement giants and renewable energy parks."
+      }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "WHY GMB POLYTECHNIC",
+    "title": "A government polytechnic with a coastal advantage",
+    "cards": [
+      {
+        "id": "curriculum",
+        "title": "Industry-oriented curriculum",
+        "description": "GTU diploma syllabus delivered with added workshops, drawing practice and safety training aligned to what regional employers actually ask for."
+      },
+      {
+        "id": "labs",
+        "title": "Working laboratories",
+        "description": "Machine shop, surveying, electrical machines and computing labs kept in running condition, with practicals conducted in small batches."
+      },
+      {
+        "id": "placements",
+        "title": "Placement support",
+        "description": "A dedicated Training & Placement Cell running mock interviews, aptitude sessions and campus drives from the fifth semester onwards."
+      },
+      {
+        "id": "proximity",
+        "title": "Maritime-sector proximity",
+        "description": "Located near the Pipavav port and shipbuilding belt, giving students industrial visits and apprenticeships within travelling distance."
+      }
+    ]
+  },
+  "principal": {
+    "eyebrow": "FROM THE PRINCIPAL",
+    "title": "A message to students and parents",
+    "name": "Prof. (Dr.) K. H. Wandra",
+    "designation": "Principal, GMB Polytechnic, Rajula",
+    "credentials": "Ph.D, M.Tech · Principal & Senior Academician",
+    "quote": "A diploma earned here is not just a certificate — it is three years of rigorous workshop hours, modern lab practice, and professional discipline that industry can rely on.",
+    "shortIntro": "Under the aegis of the Gujarat Maritime Board and GTU (Institute Code: 992), GMB Polytechnic Rajula has empowered students across coastal Saurashtra with industry-calibrated technical education and holistic character.",
+    "fullLetter": [
+      "Welcome to GMB Polytechnic, Rajula — an autonomous state technical institution established under the Gujarat Maritime Board, Government of Gujarat.",
+      "Our mission has always been anchored in practical shop-floor excellence: producing technicians who are competent, confident, and industry-ready from day one. Situated in Saurashtra's maritime corridor near Pipavav port, our students benefit from constant engagement with modern shipping, ports, heavy cement plants, and manufacturing units.",
+      "With experienced faculty dedication across Computer, Mechanical, Civil, and Electrical engineering, modern laboratories, and strict GTU academic compliance, we ensure that every learner is equipped with technical mastery and sound ethical values.",
+      "We invite aspiring matriculates and their parents to visit our vibrant campus in Rajula and experience firsthand how our 3-year diploma programs build promising engineering careers."
+    ]
+  },
+  "departments": {
+    "eyebrow": "ACADEMICS",
+    "title": "Four diploma programmes, three years each",
+    "affiliation": "Affiliated to GTU · Approved by AICTE",
+    "modal": {
+      "eyebrow": "DEPARTMENT DETAILS",
+      "programOverview": "Program Overview",
+      "headOfDepartment": "Head of Department",
+      "laboratories": "Laboratories & Workshops",
+      "careerOpportunities": "Career Opportunities",
+      "topRecruiters": "Top Industry Recruiters"
+    },
+    "items": {
+      "mechanical": {
+        "name": "Mechanical Engineering",
+        "seats": "60 SEATS",
+        "description": "Manufacturing processes, thermal engineering and machine design with an equipped workshop and CAD lab.",
+        "overview": "The Department of Mechanical Engineering prepares technicians with profound hands-on fabrication, precision turning, thermal systems maintenance, and CNC/CAD modeling skills. Backed by proximity to Pipavav ship repair yards and heavy engineering industries.",
+        "hodQualification": "M.Tech (Thermal Engg), 18+ yrs experience",
+        "labs": [
+          "Machine Shop & Lathe Operations",
+          "Fluid Mechanics & Hydraulic Machinery Lab",
+          "Thermal Engineering & I.C. Engine Lab",
+          "CAD/CAM Center (AutoCAD & SolidWorks)",
+          "Material Testing & Metallurgy Lab"
+        ],
+        "careerProspects": [
+          "Junior Engineer (Shipyards & Ports)",
+          "Plant Maintenance Technician",
+          "Quality Control Inspector",
+          "CAD Draughtsman / Designer",
+          "Thermal Power Plant Operator"
+        ]
+      },
+      "civil": {
+        "name": "Civil Engineering",
+        "seats": "60 SEATS",
+        "description": "Structures, surveying, concrete technology and construction management with regular field survey camps.",
+        "overview": "The Department of Civil Engineering imparts practical training in total station surveying, coastal structural analysis, soil mechanics, and highway engineering tailored for major infrastructure developments in coastal Gujarat.",
+        "hodQualification": "M.E. (Structural Engg), 15+ yrs experience",
+        "labs": [
+          "Advanced Surveying & Total Station Lab",
+          "Concrete Technology & NDT Testing Lab",
+          "Geotechnical & Soil Mechanics Lab",
+          "Environmental & Public Health Engg Lab",
+          "Highway & Transportation Engineering Lab"
+        ],
+        "careerProspects": [
+          "Site Supervisor / Junior Engineer (Govt & Private)",
+          "Surveyor (Total Station / GIS)",
+          "Quality Control Engineer (Concrete & Soil)",
+          "Estimation & Billing Engineer",
+          "Highway & Marine Infrastructure Assistant"
+        ]
+      },
+      "electrical": {
+        "name": "Electrical Engineering",
+        "seats": "60 SEATS",
+        "description": "Electrical machines, power systems and industrial drives, with hands-on switchgear and wiring practice.",
+        "overview": "Electrical Engineering focuses on substation operations, industrial drive control, renewable power systems (solar/wind coastal grids), and PLC-based industrial automation.",
+        "hodQualification": "M.Tech (Power Systems), 14+ yrs experience",
+        "labs": [
+          "AC & DC Machines Laboratory",
+          "Power Systems & Switchgear Protection Lab",
+          "Power Electronics & Industrial Drives Lab",
+          "Industrial Automation & PLC / SCADA Lab",
+          "Basic Electrical & Domestic Wiring Lab"
+        ],
+        "careerProspects": [
+          "Substation Operator & Line Technician",
+          "Industrial Drive & PLC Technician",
+          "Electrical Maintenance Engineer",
+          "Solar/Wind Farm Technical Supervisor",
+          "Testing & Commissioning Technician"
+        ]
+      },
+      "computer": {
+        "name": "Computer Engineering",
+        "seats": "60 SEATS",
+        "description": "Programming, databases, networking and web technologies taught across two dedicated computing labs.",
+        "overview": "Computer Engineering offers rigorous training in modern full-stack development, network administration, database design, Linux sysadmin, and cyber hygiene across high-speed networked computing laboratories.",
+        "hodQualification": "M.E. (Computer Engg), 12+ yrs experience",
+        "labs": [
+          "High-Performance Computing Lab (Core i7, Linux/Win)",
+          "Web Technologies & Cloud Applications Lab",
+          "Database Systems & Oracle/PostgreSQL Lab",
+          "Networking & Cyber Infrastructure Lab",
+          "Open Source & Python / AI Projects Lab"
+        ],
+        "careerProspects": [
+          "Junior Full-Stack Web Developer",
+          "Database Administrator Assistant",
+          "Network Support & Hardware Technician",
+          "Software Quality Assurance Tester",
+          "IT Support Executive (Port & Maritime Systems)"
+        ]
+      }
+    }
+  },
+  "admissions": {
+    "session": "ADMISSIONS 2026-27",
+    "title": "Four steps from application to admission",
+    "description": "Admission to all diploma programmes is through the Admission Committee for Professional Diploma Courses (ACPDC), Government of Gujarat, on SSC merit.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Apply online",
+        "description": "Register on the ACPDC admission portal, fill the diploma application form and upload your SSC marksheet."
+      },
+      {
+        "step": "02",
+        "title": "Document verification",
+        "description": "Visit a help centre or our campus with originals — marksheet, school leaving certificate, caste and income proof."
+      },
+      {
+        "step": "03",
+        "title": "Choice filling & counselling",
+        "description": "Fill your preference list. Merit-based seat allotment is published by the admission committee round-wise."
+      },
+      {
+        "step": "04",
+        "title": "Confirm your seat",
+        "description": "Pay the fee, report to the institute before the deadline and complete document submission to secure admission."
+      }
+    ],
+    "banner": {
+      "title": "Admissions open for the 2026 intake",
+      "enquiries": "Enquiries:"
+    }
+  },
+  "stats": {
+    "placementRate": "PLACEMENT RATE, 2025 BATCH",
+    "recruiters": "RECRUITING COMPANIES",
+    "legacy": "YEARS OF LEGACY",
+    "intake": "SANCTIONED ANNUAL INTAKE"
+  },
+  "gallery": {
+    "eyebrow": "CAMPUS LIFE",
+    "title": "Labs, sports, festivals and field work",
+    "experienceTitle": "Experience student life at Rajula",
+    "experienceSubtitle": "Cultural fests, technical clubs, NSS camps & athletic meets",
+    "browsePhotos": "Browse all 20+ Photos",
+    "modalTitle": "GMB Polytechnic, Rajula — Life & Infrastructure",
+    "items": {
+      "campus-aerial": {
+        "title": "GMB Polytechnic Panoramic Campus Complex",
+        "description": "Aerial perspective of the sprawling state-of-the-art campus buildings, academic wings, and workshops in Rajula."
+      },
+      "campus-courtyard": {
+        "title": "Central Academic Block & Assembly Courtyard",
+        "description": "Main institute facade with official GMB Polytechnic signage, flagpole, and central student gathering area."
+      },
+      "electrical-lab": {
+        "title": "Electrical Radial Feeder & Machine Testing Lab",
+        "description": "Radial feeder protection panels, DC shunt motor-generator sets, and switchgear test benches from Google Maps."
+      },
+      "civil-models": {
+        "title": "Civil Hydraulic Engineering & Dam Models Lab",
+        "description": "Scale models of River Head Works, Suppressed Weirs, Gravity Dams, and Canal Drop hydraulic structures."
+      },
+      "computer-lab": {
+        "title": "Computer Engineering & Language Lab",
+        "description": "Modern networked workstations for programming, database management, and GTU digital practicals."
+      },
+      "computer-center": {
+        "title": "Advanced CAD & Computing Center",
+        "description": "High-performance computing workstations with ergonomic seating for project development and simulation."
+      },
+      "machine-shop": {
+        "title": "Central Mechanical Machine Workshop",
+        "description": "Heavy precision lathe machines, shaping, drilling, and manufacturing tool bays in the central engineering workshop."
+      },
+      "campus-admin": {
+        "title": "Administrative Block & Main Entrance",
+        "description": "Main administrative portal, principal's office wing, and student help desk surrounded by palm landscaping."
+      },
+      "campus-wing": {
+        "title": "Academic Wings & Campus Corridors",
+        "description": "Modern architectural stairs, lecture corridors, and smart classrooms designed for natural daylight."
+      },
+      "campus-gate": {
+        "title": "Institute Main Gate & Approach Road",
+        "description": "Campus gate on Vadhera-Chhatadiya road welcoming students across Rajula and coastal Amreli district."
+      }
+    }
+  },
+  "alumni": {
+    "eyebrow": "ALUMNI ON THE COAST",
+    "title": "Where GMB Polytechnic Graduates Work & Excel",
+    "subtitle": "Real career trajectories across maritime logistics, heavy industries, state power utilities, and higher engineering degrees.",
+    "graduateProfile": "GMB Polytechnic Alumnus",
+    "currentRole": "Current Role & Employer",
+    "tipHeading": "Advice for new students",
+    "batchLabel": "Batch",
+    "branchNeedsInput": "Branch Pending",
+    "tipNeedsInput": "Graduate tip pending collection (NEEDS INPUT)",
+    "items": {
+      "alumni-pipavav": {
+        "role": "Terminal Operations Supervisor",
+        "employer": "APM Terminals Pipavav",
+        "hometown": "Rajula"
+      },
+      "alumni-gec-bhavnagar": {
+        "role": "D2D Entry · Degree Engineering",
+        "employer": "Government Engineering College, Bhavnagar",
+        "branch": "Mechanical Engineering"
+      },
+      "alumni-getco-amreli": {
+        "role": "Junior Engineer",
+        "employer": "GETCO Substation, Amreli"
+      }
+    }
+  },
+  "admissionModal": {
+    "eyebrow": "ADMISSION ENQUIRY 2026-27",
+    "title": "Apply for Diploma Admission",
+    "fullName": "Full Name *",
+    "fullNamePlaceholder": "e.g. Ramesh K. Rathod",
+    "phone": "Mobile Number *",
+    "phonePlaceholder": "+91 98765 43210",
+    "email": "Email Address",
+    "emailPlaceholder": "student@example.com",
+    "department": "Preferred Department",
+    "sscPercentage": "10th / SSC Percentage (%)",
+    "sscPlaceholder": "e.g. 74.50",
+    "city": "Current City / Taluka (e.g. Rajula, Jafrabad, Amreli)",
+    "cityPlaceholder": "e.g. Rajula",
+    "submit": "Submit Application Details",
+    "successTitle": "Application Registered Successfully!",
+    "successMessage": "Thank you, {name}. Our admission counselling desk will contact you at {phone} with the ACPDC counselling schedule and document verification guide for {branch}.",
+    "closeWindow": "Close Window"
+  },
+  "prospectusModal": {
+    "eyebrow": "INFORMATION BROCHURE",
+    "title": "GMB Polytechnic Admission Prospectus 2026-27",
+    "subtitle": "Includes syllabus curriculum, fee structure, ACPDC admission calendar, and lab facilities.",
+    "fileName": "GMB_Polytechnic_Prospectus_2026-27.pdf",
+    "fileMeta": "2.4 MB · Updated for 2026 Admissions",
+    "downloadSuccess": "Prospectus download started! Check your downloads folder.",
+    "downloadButton": "Download PDF Prospectus"
+  },
+  "footer": {
+    "about": "A government diploma engineering institute at Rajula, run by the Gujarat Maritime Board and affiliated to Gujarat Technological University.",
+    "quickLinks": "QUICK LINKS",
+    "departments": "DEPARTMENTS",
+    "contact": "CONTACT",
+    "affiliations": "AFFILIATIONS & APPROVALS",
+    "copyright": "© 2026 GMB Polytechnic, Rajula. All rights reserved.",
+    "subCopyright": "Gujarat Maritime Board · Government of Gujarat"
+  }
+}
