@@ -49,8 +49,8 @@ export const Departments: React.FC<DepartmentsProps> = ({ onApplyForDepartment }
           </div>
         </div>
 
-        {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* 4 Cards Grid with Mobile Touch-Swipe Carousel */}
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-4 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar touch-momentum">
           {DEPARTMENTS.map((dept) => {
             const deptName = t(`departments.items.${dept.id}.name`, dept.name);
             const deptSeats = t(`departments.items.${dept.id}.seats`, dept.seats);
@@ -59,7 +59,7 @@ export const Departments: React.FC<DepartmentsProps> = ({ onApplyForDepartment }
             return (
               <div
                 key={dept.id}
-                className="bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-[#0B2F52]/40 transition-all duration-200 group"
+                className="min-w-[270px] sm:min-w-0 snap-center bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-[#0B2F52]/40 transition-all duration-200 group shrink-0 sm:shrink"
               >
                 <div>
                   {/* Department Laboratory Photography */}

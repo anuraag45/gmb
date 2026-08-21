@@ -1,0 +1,24 @@
+{
+  "name": "GMB Polytechnic, Rajula",
+  "short_name": "GMB Rajula",
+  "description": "Official Admissions & Information Portal of GMB Polytechnic, Rajula (GTU Code: 992)",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06182B",
+  "theme_color": "#0B2F52",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/gmb-official-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/gmb-official-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

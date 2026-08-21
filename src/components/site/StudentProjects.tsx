@@ -24,8 +24,8 @@ export const StudentProjects: React.FC = () => {
           </p>
         </div>
 
-        {/* 4-Card Photo-Forward Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* 4-Card Photo-Forward Grid with Mobile Touch-Swipe Carousel */}
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-4 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar touch-momentum">
           {STUDENT_PROJECTS.map((proj) => {
             const title = t(`projects.items.${proj.id}.title`, proj.title);
             const category = t(`projects.items.${proj.id}.category`, proj.category);
@@ -37,7 +37,7 @@ export const StudentProjects: React.FC = () => {
             return (
               <div
                 key={proj.id}
-                className="bg-white rounded-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group"
+                className="min-w-[280px] sm:min-w-0 snap-center bg-white rounded-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group shrink-0 sm:shrink"
               >
                 <div>
                   {/* Photo Container / Prototype View */}

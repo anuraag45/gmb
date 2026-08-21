@@ -24,8 +24,8 @@ export const AlumniSpotlight: React.FC = () => {
           </p>
         </div>
 
-        {/* 3-Card Responsive Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        {/* 3-Card Responsive Grid with Mobile Touch-Swipe Carousel */}
+        <div className="flex md:grid md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 no-scrollbar touch-momentum">
           {ALUMNI_DATA.map((alum) => {
             const role = t(`alumni.items.${alum.id}.role`, alum.role);
             const employer = t(`alumni.items.${alum.id}.employer`, alum.employer);
@@ -37,7 +37,7 @@ export const AlumniSpotlight: React.FC = () => {
             return (
               <div
                 key={alum.id}
-                className="bg-[#F8FAFC] rounded-xl border border-slate-200/90 p-6 sm:p-7 flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group"
+                className="min-w-[290px] sm:min-w-[320px] md:min-w-0 snap-center bg-[#F8FAFC] rounded-xl border border-slate-200/90 p-5 sm:p-7 flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group shrink-0 md:shrink"
               >
                 <div className="space-y-5">
                   {/* Top Profile Header */}

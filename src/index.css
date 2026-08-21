@@ -118,3 +118,17 @@ html {
   background: #94a3b8;
 }
 
+/* Mobile Smooth Scrolling & Snap Carousel Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.touch-momentum {
+  -webkit-overflow-scrolling: touch;
+}
+
+

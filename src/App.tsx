@@ -11,6 +11,7 @@ import { Stats } from '@/components/site/Stats';
 import { AlumniSpotlight } from '@/components/site/AlumniSpotlight';
 import { GalleryPreview } from '@/components/site/GalleryPreview';
 import { Footer } from '@/components/site/Footer';
+import { MobileBottomBar } from '@/components/site/MobileBottomBar';
 import { AdmissionModal } from '@/components/site/AdmissionModal';
 import { ProspectusModal } from '@/components/site/ProspectusModal';
 
@@ -25,7 +26,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 flex flex-col">
+    <div className="min-h-screen bg-white text-slate-900 flex flex-col pb-16 md:pb-0">
       {/* Top Notification Bar & Navbar */}
       <Header onApplyClick={() => handleOpenApply()} />
 
@@ -67,6 +68,9 @@ export function App() {
 
       {/* Institutional Footer */}
       <Footer />
+
+      {/* Dedicated Sticky Mobile Quick-Action Navigation Bar */}
+      <MobileBottomBar onApplyClick={() => handleOpenApply()} />
 
       {/* Interactive Admission Application Modal */}
       <AdmissionModal
