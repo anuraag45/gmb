@@ -8,8 +8,8 @@ export const StudentProjects: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="student-projects" className="py-16 md:py-24 bg-[#F8FAFC] border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="student-projects" className="py-16 md:py-24 bg-[#F8FAFC] border-b border-slate-200 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-12 space-y-3">
@@ -25,7 +25,7 @@ export const StudentProjects: React.FC = () => {
         </div>
 
         {/* 4-Card Photo-Forward Grid with Mobile Touch-Swipe Carousel */}
-        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-4 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar touch-momentum">
+        <div className="w-full max-w-full overflow-x-auto sm:overflow-visible flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 snap-x snap-mandatory pb-4 sm:pb-0 no-scrollbar touch-momentum">
           {STUDENT_PROJECTS.map((proj) => {
             const title = t(`projects.items.${proj.id}.title`, proj.title);
             const category = t(`projects.items.${proj.id}.category`, proj.category);
@@ -37,7 +37,7 @@ export const StudentProjects: React.FC = () => {
             return (
               <div
                 key={proj.id}
-                className="min-w-[280px] sm:min-w-0 snap-center bg-white rounded-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group shrink-0 sm:shrink"
+                className="min-w-[260px] xs:min-w-[280px] sm:min-w-0 snap-center bg-white rounded-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group shrink-0 sm:shrink"
               >
                 <div>
                   {/* Photo Container / Prototype View */}

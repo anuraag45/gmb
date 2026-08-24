@@ -62,22 +62,22 @@ export const Header: React.FC<HeaderProps> = ({ onApplyClick }) => {
 
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20 gap-2">
           
           {/* Logo & Institute Title */}
-          <a href="#hero" className="flex items-center gap-3.5 group">
-            <div className="w-12 h-12 rounded-lg bg-white border border-slate-200 shadow-xs p-1 flex items-center justify-center shrink-0 group-hover:border-[#0B2F52]/40 transition-colors">
+          <a href="#hero" className="flex items-center gap-2.5 sm:gap-3.5 group min-w-0 flex-1 mr-2">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white border border-slate-200 shadow-xs p-1 flex items-center justify-center shrink-0 group-hover:border-[#0B2F52]/40 transition-colors">
               <img
                 src="/images/gmb-official-logo.png"
                 alt="GMB Polytechnic Official Logo"
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="flex flex-col">
-              <span className="font-heading text-lg sm:text-2xl font-bold text-[#0B2F52] tracking-tight leading-tight">
+            <div className="flex flex-col min-w-0">
+              <span className="font-heading text-sm xs:text-base sm:text-xl lg:text-2xl font-bold text-[#0B2F52] tracking-tight leading-tight truncate">
                 {t('header.instituteName')}
               </span>
-              <span className="text-[11px] font-mono font-medium tracking-wider text-slate-500 uppercase">
+              <span className="text-[10px] sm:text-[11px] font-mono font-medium tracking-wider text-slate-500 uppercase truncate hidden xs:block">
                 {t('header.parentOrg')}
               </span>
             </div>
@@ -96,27 +96,26 @@ export const Header: React.FC<HeaderProps> = ({ onApplyClick }) => {
             ))}
           </nav>
 
-          {/* Right Action CTA & Segmented Language Switcher */}
-          <div className="hidden lg:flex items-center gap-3">
+          {/* Right Action CTA & Segmented Language Switcher (Desktop) */}
+          <div className="hidden lg:flex items-center gap-3 shrink-0">
             <LanguageSwitcher variant="navbar" />
             <Button 
               onClick={onApplyClick}
               variant="primary" 
               size="md"
-              className="font-semibold shadow-sm hover:shadow transition-shadow"
+              className="font-semibold shadow-sm hover:shadow transition-shadow cursor-pointer"
             >
               {t('common.applyNow')}
             </Button>
           </div>
 
-          {/* Mobile Menu Button & Small Apply */}
-          <div className="flex lg:hidden items-center gap-2">
-            <LanguageSwitcher variant="navbar" className="scale-90" />
+          {/* Mobile Menu Button & Compact Apply (Mobile) */}
+          <div className="flex lg:hidden items-center gap-1.5 sm:gap-2 shrink-0">
             <Button 
               onClick={onApplyClick}
               variant="primary" 
               size="sm"
-              className="sm:hidden font-medium text-xs px-2.5"
+              className="hidden sm:inline-flex font-medium text-xs px-2.5 cursor-pointer"
             >
               {t('common.applyNow')}
             </Button>
@@ -125,7 +124,7 @@ export const Header: React.FC<HeaderProps> = ({ onApplyClick }) => {
               className="p-2 rounded-md text-slate-700 hover:bg-slate-100 focus:outline-none cursor-pointer"
               aria-label="Toggle navigation menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
           </div>
         </div>

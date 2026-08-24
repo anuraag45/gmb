@@ -30,12 +30,12 @@ export const Departments: React.FC<DepartmentsProps> = ({ onApplyForDepartment }
   };
 
   return (
-    <section id="departments" className="py-16 md:py-24 bg-[#F8FAFC] border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="departments" className="py-16 md:py-24 bg-white border-b border-slate-200 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
-        {/* Section Header Row */}
+        {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-          <div className="space-y-2">
+          <div className="max-w-3xl space-y-3">
             <span className="text-xs md:text-sm font-bold font-mono tracking-widest text-[#EA580C] uppercase block">
               {t('departments.eyebrow')}
             </span>
@@ -50,7 +50,7 @@ export const Departments: React.FC<DepartmentsProps> = ({ onApplyForDepartment }
         </div>
 
         {/* 4 Cards Grid with Mobile Touch-Swipe Carousel */}
-        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-4 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar touch-momentum">
+        <div className="w-full max-w-full overflow-x-auto sm:overflow-visible flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 snap-x snap-mandatory pb-4 sm:pb-0 no-scrollbar touch-momentum">
           {DEPARTMENTS.map((dept) => {
             const deptName = t(`departments.items.${dept.id}.name`, dept.name);
             const deptSeats = t(`departments.items.${dept.id}.seats`, dept.seats);
@@ -59,7 +59,7 @@ export const Departments: React.FC<DepartmentsProps> = ({ onApplyForDepartment }
             return (
               <div
                 key={dept.id}
-                className="min-w-[270px] sm:min-w-0 snap-center bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-[#0B2F52]/40 transition-all duration-200 group shrink-0 sm:shrink"
+                className="min-w-[260px] xs:min-w-[280px] sm:min-w-0 snap-center bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-[#0B2F52]/40 transition-all duration-200 group shrink-0 sm:shrink"
               >
                 <div>
                   {/* Department Laboratory Photography */}

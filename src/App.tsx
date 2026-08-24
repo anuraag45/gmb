@@ -26,12 +26,12 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 flex flex-col pb-16 md:pb-0">
+    <div className="min-h-screen bg-white text-slate-900 flex flex-col pb-16 md:pb-0 w-full max-w-full overflow-x-hidden">
       {/* Top Notification Bar & Navbar */}
       <Header onApplyClick={() => handleOpenApply()} />
 
       {/* Main Content Sections */}
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden">
         {/* Hero Section */}
         <Hero onApplyClick={() => handleOpenApply()} />
 
