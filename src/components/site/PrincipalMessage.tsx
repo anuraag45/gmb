@@ -33,11 +33,11 @@ export const PrincipalMessage: React.FC = () => {
           
           {/* Left Column: Portrait & Credentials */}
           <div className="md:col-span-5 lg:col-span-4 space-y-4">
-            <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm">
+            <div className="max-w-xs sm:max-w-sm md:max-w-none rounded-lg overflow-hidden border border-slate-200 shadow-sm">
               <PlaceholderImage
                 label="PRINCIPAL-PORTRAIT.JPG"
                 aspectRatio="portrait"
-                className="w-full h-80 sm:h-96"
+                className="w-full h-56 xs:h-64 sm:h-80 md:h-96 object-cover"
               />
             </div>
 

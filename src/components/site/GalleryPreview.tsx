@@ -51,45 +51,45 @@ export const GalleryPreview: React.FC = () => {
         </div>
 
         {/* Asymmetric Gallery Grid matching the screenshot */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-4">
           
           {/* Large Left Item (Spans 6 cols, 2 rows height) */}
           <div className="md:col-span-6 flex flex-col">
             <div 
               onClick={() => openItem(campusAerial)}
-              className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-full min-h-[320px] md:min-h-[420px] flex"
+              className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-48 xs:h-56 sm:h-64 md:min-h-[420px] md:h-full flex"
             >
               <PlaceholderImage
                 label={campusAerial.imageLabel}
                 variant="dark"
-                className="w-full h-full min-h-[320px] md:min-h-[420px]"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
 
           {/* Right Column Layout (Spans 6 cols) */}
-          <div className="md:col-span-6 flex flex-col gap-4">
+          <div className="md:col-span-6 flex flex-col gap-3 sm:gap-4">
             
             {/* Top row of right side (2 small boxes) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <div 
                 onClick={() => openItem(electricalLab)}
-                className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-48"
+                className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-36 xs:h-40 sm:h-48"
               >
                 <PlaceholderImage
                   label={electricalLab.imageLabel}
                   variant="dark"
-                  className="w-full h-full"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div 
                 onClick={() => openItem(civilModels)}
-                className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-48"
+                className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-36 xs:h-40 sm:h-48"
               >
                 <PlaceholderImage
                   label={civilModels.imageLabel}
                   variant="dark"
-                  className="w-full h-full"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
@@ -97,40 +97,42 @@ export const GalleryPreview: React.FC = () => {
             {/* Bottom row of right side (1 wide box) */}
             <div 
               onClick={() => openItem(campusCourtyard)}
-              className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-52 md:h-56"
+              className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-40 xs:h-48 md:h-56"
             >
               <PlaceholderImage
                 label={campusCourtyard.imageLabel}
                 variant="dark"
-                className="w-full h-full"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
 
           {/* Bottom Extra Row (Computer & Machine Shop) */}
-          <div className="md:col-span-3">
-            <div 
-              onClick={() => openItem(computerLab)}
-              className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-40"
-            >
-              <PlaceholderImage
-                label={computerLab.imageLabel}
-                variant="dark"
-                className="w-full h-full"
-              />
+          <div className="grid grid-cols-2 md:contents gap-3 sm:gap-4">
+            <div className="md:col-span-3">
+              <div 
+                onClick={() => openItem(computerLab)}
+                className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-32 xs:h-36 sm:h-40"
+              >
+                <PlaceholderImage
+                  label={computerLab.imageLabel}
+                  variant="dark"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
-          </div>
 
-          <div className="md:col-span-3">
-            <div 
-              onClick={() => openItem(machineShop)}
-              className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-40"
-            >
-              <PlaceholderImage
-                label={machineShop.imageLabel}
-                variant="dark"
-                className="w-full h-full"
-              />
+            <div className="md:col-span-3">
+              <div 
+                onClick={() => openItem(machineShop)}
+                className="rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition-all duration-200 cursor-pointer h-32 xs:h-36 sm:h-40"
+              >
+                <PlaceholderImage
+                  label={machineShop.imageLabel}
+                  variant="dark"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
 

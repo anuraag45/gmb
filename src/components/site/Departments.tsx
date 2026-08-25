@@ -59,51 +59,49 @@ export const Departments: React.FC<DepartmentsProps> = ({ onApplyForDepartment }
             return (
               <div
                 key={dept.id}
-                className="min-w-[260px] xs:min-w-[280px] sm:min-w-0 snap-center bg-white rounded-lg border border-slate-200 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-[#0B2F52]/40 transition-all duration-200 group shrink-0 sm:shrink"
+                className="min-w-[270px] xs:min-w-[290px] sm:min-w-0 snap-center bg-white rounded-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-[#0B2F52]/40 transition-all duration-200 group shrink-0 sm:shrink"
               >
                 <div>
-                  {/* Department Laboratory Photography */}
-                  <div className="relative border-b border-slate-100">
+                  {/* Department Laboratory Photography (Mobile optimized height) */}
+                  <div className="relative aspect-[16/10] sm:aspect-auto sm:h-40 md:h-44 border-b border-slate-100 overflow-hidden bg-slate-900">
                     <PlaceholderImage
                       label={dept.imageLabel}
                       aspectRatio="landscape"
-                      className="w-full h-44 group-hover:scale-[1.02] transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
                     />
                   </div>
 
-                  <div className="p-6">
-                    {/* Icon Box */}
-                    <div className="mb-4">
-                      <div className={`w-10 h-10 rounded-md ${dept.iconBg} text-white flex items-center justify-center shadow-xs`}>
+                  <div className="p-4 sm:p-5 md:p-6">
+                    {/* Top Row: Icon + Seats Badge */}
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-lg ${dept.iconBg} text-white flex items-center justify-center shadow-xs shrink-0`}>
                         {getIcon(dept.iconName)}
                       </div>
+                      <span className="inline-flex items-center text-[10px] sm:text-[11px] font-mono font-semibold tracking-wide px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200 shrink-0">
+                        {deptSeats}
+                      </span>
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-lg font-bold text-slate-900 mb-1 tracking-tight font-sans">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-1.5 tracking-tight font-heading leading-snug">
                       {deptName}
                     </h3>
 
-                    {/* Seats Badge */}
-                    <span className="inline-block text-[11px] font-mono font-semibold tracking-wider text-slate-500 uppercase mb-3">
-                      {deptSeats}
-                    </span>
-
                     {/* Description */}
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3">
                       {deptDesc}
                     </p>
                   </div>
                 </div>
 
                 {/* Card Footer Link */}
-                <div className="px-6 pb-6 pt-2">
+                <div className="px-4 pb-4 sm:px-5 sm:pb-5 md:px-6 md:pb-6 pt-1 border-t border-slate-100/80">
                   <button
                     onClick={() => setSelectedDept(dept)}
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-[#0B2F52] group-hover:text-[#EA580C] transition-colors cursor-pointer"
+                    className="w-full py-1.5 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#0B2F52] group-hover:text-[#EA580C] transition-colors cursor-pointer"
                   >
                     <span>{t('common.departmentDetails')}</span>
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform group-hover:translate-x-1" />
                   </button>
                 </div>
               </div>

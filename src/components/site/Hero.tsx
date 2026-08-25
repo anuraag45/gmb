@@ -99,9 +99,9 @@ export const Hero: React.FC<HeroProps> = ({ onApplyClick }) => {
           </div>
         ))}
         
-        {/* Dark Navy / Slate Gradient Overlay matching reference */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#06182B]/95 via-[#06182B]/85 to-[#06182B]/45 sm:to-[#06182B]/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#06182B]/90 via-transparent to-black/30" />
+        {/* Dark Navy / Slate Gradient Overlay (Mobile balanced, Desktop left-vignette) */}
+        <div className="absolute inset-0 bg-slate-950/40 sm:bg-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#06182B]/90 via-[#06182B]/45 to-black/25 sm:bg-gradient-to-r sm:from-[#06182B]/95 sm:via-[#06182B]/80 sm:to-[#06182B]/35" />
       </div>
 
       {/* Main Left Content Container */}

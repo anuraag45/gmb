@@ -56,20 +56,20 @@ export const Admissions: React.FC<AdmissionsProps> = ({
         </div>
 
         {/* 4 Steps Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-lg border border-slate-200 p-7 flex flex-col justify-between hover:shadow-md transition-shadow"
+              className="bg-white rounded-xl border border-slate-200/90 p-5 sm:p-6 md:p-7 flex flex-col justify-between hover:shadow-md transition-shadow"
             >
               <div>
                 {/* Step Number */}
-                <div className="text-2xl font-bold font-mono text-[#EA580C]/80 mb-4 tracking-wider">
+                <div className="text-xl sm:text-2xl font-bold font-mono text-[#EA580C]/80 mb-3 sm:mb-4 tracking-wider">
                   {step.step}
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-tight">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2 sm:mb-3 tracking-tight">
                   {step.title}
                 </h3>
 

@@ -37,13 +37,13 @@ export const AlumniSpotlight: React.FC = () => {
             return (
               <div
                 key={alum.id}
-                className="min-w-[270px] xs:min-w-[300px] md:min-w-0 snap-center bg-[#F8FAFC] rounded-xl border border-slate-200/90 p-5 sm:p-7 flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group shrink-0 md:shrink"
+                className="min-w-[270px] xs:min-w-[290px] md:min-w-0 snap-center bg-[#F8FAFC] rounded-xl border border-slate-200/90 p-4 sm:p-5 md:p-7 flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group shrink-0 md:shrink"
               >
-                <div className="space-y-5">
+                <div className="space-y-3.5 sm:space-y-5">
                   {/* Top Profile Header */}
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     {alum.photoLabel ? (
-                      <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-xs">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-xs">
                         <PlaceholderImage
                           label={alum.photoLabel}
                           aspectRatio="square"
@@ -51,32 +51,32 @@ export const AlumniSpotlight: React.FC = () => {
                         />
                       </div>
                     ) : (
-                      <div className="w-14 h-14 rounded-full bg-[#0B2F52]/10 text-[#0B2F52] flex items-center justify-center shrink-0 border-2 border-white shadow-xs">
-                        <User className="w-6 h-6 stroke-[1.8]" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#0B2F52]/10 text-[#0B2F52] flex items-center justify-center shrink-0 border-2 border-white shadow-xs">
+                        <User className="w-5 h-5 sm:w-6 sm:h-6 stroke-[1.8]" />
                       </div>
                     )}
 
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <h3 className="text-base font-bold text-slate-900 truncate font-heading">
+                      <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                        <h3 className="text-sm sm:text-base font-bold text-slate-900 truncate font-heading">
                           {alum.name}
                         </h3>
                         {hometown && (
-                          <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-500 bg-white border border-slate-200 px-2 py-0.5 rounded-full">
-                            <MapPin className="w-3 h-3 text-[#EA580C]" />
+                          <span className="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-medium text-slate-500 bg-white border border-slate-200 px-1.5 sm:px-2 py-0.5 rounded-full">
+                            <MapPin className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#EA580C]" />
                             {hometown}
                           </span>
                         )}
                       </div>
 
                       {/* Branch & Batch Badges */}
-                      <div className="flex items-center gap-2 mt-1.5 flex-wrap">
-                        <span className="inline-flex items-center gap-1 text-[11px] font-mono font-medium text-[#0B2F52] bg-[#EBF3FA] px-2 py-0.5 rounded">
+                      <div className="flex items-center gap-1.5 mt-1 flex-wrap">
+                        <span className="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-mono font-medium text-[#0B2F52] bg-[#EBF3FA] px-1.5 sm:px-2 py-0.5 rounded">
                           <GraduationCap className="w-3 h-3" />
-                          {branch}
+                          <span className="truncate max-w-[130px] sm:max-w-none">{branch}</span>
                         </span>
 
-                        <span className="text-[11px] font-mono text-slate-500">
+                        <span className="text-[10px] sm:text-[11px] font-mono text-slate-500">
                           {t('alumni.batchLabel')} {batchYear}
                         </span>
                       </div>
@@ -84,12 +84,12 @@ export const AlumniSpotlight: React.FC = () => {
                   </div>
 
                   {/* Career & Role Block */}
-                  <div className="bg-white rounded-lg p-4 border border-slate-200/80 space-y-1.5 shadow-2xs">
-                    <div className="flex items-center gap-2 text-xs font-mono font-semibold text-[#EA580C] uppercase tracking-wider">
-                      <Briefcase className="w-3.5 h-3.5" />
+                  <div className="bg-white rounded-lg p-3 sm:p-4 border border-slate-200/80 space-y-1 shadow-2xs">
+                    <div className="flex items-center gap-1.5 text-[10px] sm:text-xs font-mono font-semibold text-[#EA580C] uppercase tracking-wider">
+                      <Briefcase className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                       <span>{t('alumni.currentRole')}</span>
                     </div>
-                    <p className="text-base font-bold text-[#0B2F52] leading-snug">
+                    <p className="text-sm sm:text-base font-bold text-[#0B2F52] leading-snug">
                       {role}
                     </p>
                     <p className="text-xs font-medium text-slate-600">

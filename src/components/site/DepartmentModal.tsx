@@ -53,7 +53,7 @@ export const DepartmentModal: React.FC<DepartmentModalProps> = ({
           <PlaceholderImage
             label={department.imageLabel}
             aspectRatio="landscape"
-            className="w-full h-48 sm:h-56"
+            className="w-full h-36 xs:h-44 sm:h-56 object-cover"
           />
         </div>
 
