@@ -76,7 +76,7 @@ export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
       <div
         onClick={onClick}
         className={cn(
-          'relative overflow-hidden bg-slate-900 flex items-center justify-center select-none',
+          'relative overflow-hidden bg-slate-900 flex items-center justify-center select-none w-full h-full',
           aspectClasses,
           onClick ? 'cursor-pointer' : '',
           className
@@ -89,7 +89,7 @@ export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
           onLoad={() => setIsLoaded(true)}
           onError={() => setHasError(true)}
           className={cn(
-            'w-full h-full object-cover transition-all duration-500',
+            'absolute inset-0 w-full h-full object-cover transition-all duration-500',
             isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
           )}
         />
@@ -106,7 +106,7 @@ export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
     <div
       onClick={onClick}
       className={cn(
-        'relative overflow-hidden bg-linear-to-br from-[#06182B] to-[#0B2F52] flex items-center justify-center select-none',
+        'relative overflow-hidden bg-linear-to-br from-[#06182B] to-[#0B2F52] flex items-center justify-center select-none w-full h-full',
         aspectClasses,
         onClick ? 'cursor-pointer' : '',
         className
@@ -115,7 +115,7 @@ export const PlaceholderImage: React.FC<PlaceholderImageProps> = ({
       <img
         src="/images/gmb/campus-main.jpg"
         alt="GMB Polytechnic Campus"
-        className="w-full h-full object-cover opacity-90"
+        className="absolute inset-0 w-full h-full object-cover opacity-90"
       />
     </div>
   );

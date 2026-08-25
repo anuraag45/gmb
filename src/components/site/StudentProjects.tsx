@@ -24,8 +24,8 @@ export const StudentProjects: React.FC = () => {
           </p>
         </div>
 
-        {/* 4-Card Photo-Forward Grid with Mobile Touch-Swipe Carousel */}
-        <div className="w-full max-w-full overflow-x-auto sm:overflow-visible flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 snap-x snap-mandatory pb-4 sm:pb-0 no-scrollbar touch-momentum">
+        {/* 4-Card Photo-Forward Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {STUDENT_PROJECTS.map((proj) => {
             const title = t(`projects.items.${proj.id}.title`, proj.title);
             const category = t(`projects.items.${proj.id}.category`, proj.category);
@@ -37,19 +37,18 @@ export const StudentProjects: React.FC = () => {
             return (
               <div
                 key={proj.id}
-                className="min-w-[270px] xs:min-w-[290px] sm:min-w-0 snap-center bg-white rounded-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group shrink-0 sm:shrink"
+                className="w-full bg-white rounded-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition-all duration-200 group"
               >
                 <div>
-                  {/* Photo Container / Prototype View (Mobile optimized height) */}
-                  <div className="relative aspect-[16/10] sm:aspect-auto sm:h-36 md:h-40 bg-slate-900 overflow-hidden border-b border-slate-200/80">
+                  {/* Photo Container / Prototype View (Strict fixed height) */}
+                  <div className="relative w-full h-44 sm:h-40 md:h-44 bg-slate-900 overflow-hidden border-b border-slate-200/80 shrink-0">
                     <PlaceholderImage
                       label={proj.prototypePhotoLabel || 'PROJECT-DEFAULT.JPG'}
-                      aspectRatio="wide"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full"
                     />
 
                     {/* Category Overlay Tag */}
-                    <div className="absolute top-2 left-2 z-10">
+                    <div className="absolute top-2.5 left-2.5 z-10">
                       <span className="inline-flex items-center gap-1 bg-[#0B2F52]/90 backdrop-blur-xs text-white text-[10px] font-mono font-medium px-2 py-0.5 rounded shadow-xs">
                         <Cpu className="w-3 h-3 text-orange-400" />
                         {category}
@@ -57,8 +56,8 @@ export const StudentProjects: React.FC = () => {
                     </div>
 
                     {/* Working Prototype Status Badge */}
-                    <div className="absolute bottom-2 right-2 z-10">
-                      <span className="inline-flex items-center gap-1 bg-emerald-600/90 text-white text-[9px] font-mono font-bold px-1.5 py-0.5 rounded shadow-xs">
+                    <div className="absolute bottom-2.5 right-2.5 z-10">
+                      <span className="inline-flex items-center gap-1 bg-emerald-600/90 text-white text-[9.5px] font-mono font-bold px-1.5 py-0.5 rounded shadow-xs">
                         ✓ Working Prototype
                       </span>
                     </div>

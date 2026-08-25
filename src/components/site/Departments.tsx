@@ -49,8 +49,8 @@ export const Departments: React.FC<DepartmentsProps> = ({ onApplyForDepartment }
           </div>
         </div>
 
-        {/* 4 Cards Grid with Mobile Touch-Swipe Carousel */}
-        <div className="w-full max-w-full overflow-x-auto sm:overflow-visible flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 snap-x snap-mandatory pb-4 sm:pb-0 no-scrollbar touch-momentum">
+        {/* 4 Cards Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {DEPARTMENTS.map((dept) => {
             const deptName = t(`departments.items.${dept.id}.name`, dept.name);
             const deptSeats = t(`departments.items.${dept.id}.seats`, dept.seats);
@@ -59,15 +59,14 @@ export const Departments: React.FC<DepartmentsProps> = ({ onApplyForDepartment }
             return (
               <div
                 key={dept.id}
-                className="min-w-[270px] xs:min-w-[290px] sm:min-w-0 snap-center bg-white rounded-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-[#0B2F52]/40 transition-all duration-200 group shrink-0 sm:shrink"
+                className="w-full bg-white rounded-xl border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-lg hover:border-[#0B2F52]/40 transition-all duration-200 group"
               >
                 <div>
-                  {/* Department Laboratory Photography (Mobile optimized height) */}
-                  <div className="relative aspect-[16/10] sm:aspect-auto sm:h-40 md:h-44 border-b border-slate-100 overflow-hidden bg-slate-900">
+                  {/* Department Laboratory Photography (Strict fixed height) */}
+                  <div className="relative w-full h-44 sm:h-40 md:h-44 border-b border-slate-100 overflow-hidden bg-slate-900 shrink-0">
                     <PlaceholderImage
                       label={dept.imageLabel}
-                      aspectRatio="landscape"
-                      className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                      className="w-full h-full"
                     />
                   </div>
 
